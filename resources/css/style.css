@@ -1,0 +1,119 @@
+/* Universal Styles */
+
+.flex-content {
+  display: flex;
+  padding: 0 1.5rem;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Header */
+
+header {
+  background-color: white;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+header div span::after {
+  content: 'ACADEMY';
+  color: lightgrey;
+}
+
+/* Navigation */
+
+ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav.mobile {
+  display: none;
+}
+
+/* Banner */
+
+.banner {
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  padding-top: 4rem;
+}
+
+.banner img {
+  width: 60%;
+  margin: 2rem 0;
+}
+
+.banner .banner-text{
+  padding-left: 2.5rem;
+}
+
+.button {
+  background-color: darkgrey;
+  text-decoration: none;
+  color: white;
+  max-width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+/* Heading */
+
+.main-content img {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.main-content .content {
+  margin: 0 1.5rem 2rem 1.5rem;
+  width: 100%;
+}
+
+.flex-content .main-content {
+  width: 60%;
+  padding: 2rem 1.5rem 2rem 0;
+  border-right: 1px solid rgb(245, 245, 245);
+}
+
+.flex-content {
+  display: flex;
+  padding: 0 1.5rem;
+}
+
+/* Sidebar */
+
+.supporting-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 2rem 0;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info img {
+  width: 35%;
+  margin: 1rem;
+}
