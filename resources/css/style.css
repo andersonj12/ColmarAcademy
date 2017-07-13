@@ -1,5 +1,9 @@
 /* Universal Styles */
 
+body {
+  overflow-x: hidden;
+}
+
 .flex-content {
   display: flex;
   padding: 0 1.5rem;
@@ -115,3 +119,47 @@ nav.mobile {
 }
 
 /* Courses */
+
+.courses {
+  padding-top: 2rem;
+  background-color: lightgray;
+}
+
+.items {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin: 2rem 1rem;
+  width: 400px;
+  height: 423px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+}
+
+.image-container {
+  height: 220px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.image-container h3, span, p {
+  margin: 1rem;
+}
+
+.image-container h3 {
+  padding-bottom: 0.5rem;
+}
+
+#courses h2 {
+  text-align: center;
+}
