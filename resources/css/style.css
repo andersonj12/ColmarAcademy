@@ -170,6 +170,10 @@ nav.mobile {
 
 /* Thesis Exhibit */
 
+#events {
+  padding: 0;
+}
+
 h2#thesis {
   text-align: center;
   padding: 2rem;
@@ -177,6 +181,10 @@ h2#thesis {
 
 #video {
   padding-top: 0;
+}
+
+#fisma {
+  background-color: lightgrey;
 }
 
 /* Footer */
