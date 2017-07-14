@@ -1,9 +1,5 @@
 /* Universal Styles */
 
-body {
-  overflow-x: hidden;
-}
-
 .flex-content {
   display: flex;
   padding: 0 1.5rem;
@@ -12,6 +8,11 @@ body {
 .main-content img {
   width: 100%;
   margin: 1rem 0;
+}
+
+.main-content video {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .main-content .content {
@@ -45,7 +46,7 @@ body {
 
 header {
   background-color: white;
-  height: 4rem;
+  height: 64px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -109,7 +110,7 @@ nav.mobile {
 
 .info {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -120,13 +121,7 @@ nav.mobile {
 
 /* Courses */
 
-.courses {
-  padding-top: 2rem;
-  background-color: lightgray;
-}
-
 .items {
-  margin: 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,32 +129,62 @@ nav.mobile {
 }
 
 .item {
-  margin: 2rem 1rem;
-  width: 400px;
+  margin: 0 1rem 1rem 1rem;
+  width: 28.5%;
   height: 423px;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .image-container {
   height: 220px;
 }
 
-.image-container img {
+.item img {
   width: 100%;
 }
 
-.image-container h3, span, p {
+.item h3 {
   margin: 1rem;
 }
 
-.image-container h3 {
-  padding-bottom: 0.5rem;
+.item span {
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.item p {
+  margin: 0.5rem 0 1.5rem 1rem;
 }
 
 #courses h2 {
   text-align: center;
+  padding: 2rem;
+}
+
+#courses {
+  background-color: lightgray;
+}
+
+/* Thesis Exhibit */
+
+h2#thesis {
+  text-align: center;
+  padding: 2rem;
+}
+
+#video {
+  padding-top: 0;
+}
+
+/* Footer */
+
+footer {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid rgb(245, 245, 245);
 }
