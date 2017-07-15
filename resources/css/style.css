@@ -291,6 +291,10 @@ section.flex-content {
   padding-top: 0;
 }
 
+#video p {
+  margin-top: 1rem;
+}
+
 .events {
   display: flex;
   justify-content: flex-start;
