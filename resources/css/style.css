@@ -1,3 +1,29 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Kalam Light'), local('Kalam-Light'), url(https://fonts.gstatic.com/s/kalam/v7/hTIz1EhZk15xkDsCgpOJLvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kalam'), local('Kalam-Regular'), url(https://fonts.gstatic.com/s/kalam/v7/IOem-i1iklYvPM2B8plGmg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Kalam Bold'), local('Kalam-Bold'), url(https://fonts.gstatic.com/s/kalam/v7/V6yS6HmuVV3o39pJxMtJC_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 /* Universal Styles */
 
 .flex-content {
@@ -13,22 +39,18 @@
 .main-content video {
   width: 100%;
   margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #000000;
 }
 
 .main-content .content {
-  margin: 0 1.5rem 2rem 1.5rem;
   width: 100%;
 }
 
 .flex-content .main-content {
   width: 60%;
   padding: 2rem 1.5rem 2rem 0;
-  border-right: 1px solid rgb(245, 245, 245);
-}
-
-.flex-content {
-  display: flex;
-  padding: 0 1.5rem;
+  border-right: 1px solid #000000;
 }
 
 .supporting-content {
@@ -42,10 +64,37 @@
   display: none;
 }
 
+img {
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+body {
+  line-height: 1.2;
+  font-family: 'Kalam', cursive;
+}
+
+p, span, a {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
 /* Header */
 
 header {
-  background-color: white;
+  background-color: #5485B3;
   height: 64px;
   width: 100%;
   display: flex;
@@ -53,6 +102,7 @@ header {
   align-items: center;
   position: fixed;
   z-index: 1;
+  border-bottom: 1px solid #000000;
 }
 
 header div {
@@ -63,10 +113,15 @@ header div {
 
 header div span::after {
   content: 'ACADEMY';
-  color: lightgrey;
+  color: #FFFFFF;
 }
 
 /* Navigation */
+
+.logo, .nav {
+  border: 0 none;
+  border-radius: 0;
+}
 
 ul li {
   display: inline;
@@ -80,31 +135,68 @@ nav.mobile {
 /* Banner */
 
 .banner {
-  background-color: lightgrey;
   padding-top: 4rem;
+  background-color: #B39566;
+  text-align: center;
 }
 
 .banner .main-content {
   border-right: none;
 }
 
+.banner img {
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
 .banner .banner-text {
   justify-content: center;
   margin-left: 1rem;
-  width: auto;
+  width: 30%;
 }
 
-.button {
-  background-color: rgb(75, 75, 75);
+button {
+  background-color: #5485B3;
   text-decoration: none;
   color: white;
   width: 100%;
   padding: 0.5rem 0;
   display: flex;
   justify-content: center;
+  border-style: none;
+  margin-top: 1.5rem;
+  font-size: 20px;
+  font-family: 'Kalam', cursive;
+}
+
+.banner-text p {
+  margin-top: 1rem;
+  font-size: 24px;
 }
 
 /* Heading */
+
+section.flex-content {
+  background-color: #FFDFAB;
+  padding-right: 0;
+}
+
+.heading img {
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+
+#quotes h2 {
+  margin-top: 1rem;
+}
+
+#quotes p {
+  margin-top: 1rem;
+}
+
+#quotes p:last-child {
+  margin-top: 2rem;
+}
 
 /* Sidebar */
 
@@ -112,11 +204,21 @@ nav.mobile {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  border-bottom: 1px solid #000000;
 }
 
 .info img {
   width: 35%;
   margin: 1rem;
+}
+
+.info p {
+  margin-top: 1rem;
+}
+
+.info:last-child {
+  background-color: #FFE9C4;
+  border-style: none;
 }
 
 /* Courses */
@@ -132,11 +234,12 @@ nav.mobile {
   margin: 0 1rem 1rem 1rem;
   width: 28.5%;
   height: 423px;
-  background-color: rgb(245, 245, 245);
+  background-color: #FFE9C4;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  border-radius: 5px;
 }
 
 .image-container {
@@ -165,7 +268,8 @@ nav.mobile {
 }
 
 #courses {
-  background-color: lightgray;
+  background-color: #ABD7FF;
+  padding-bottom: 2rem;
 }
 
 /* Thesis Exhibit */
@@ -174,17 +278,41 @@ nav.mobile {
   padding: 0;
 }
 
-h2#thesis {
+#thesis h2 {
   text-align: center;
   padding: 2rem;
+}
+
+#thesis {
+  background-color: #FFDFAB;
 }
 
 #video {
   padding-top: 0;
 }
 
-#fisma {
-  background-color: lightgrey;
+.events {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #000000;
+}
+
+.events:first-child {
+  background-color: #FFE9C4;
+}
+
+.events:last-child {
+  border-style: none;
+}
+
+.events p {
+  margin-top: 1rem;
+}
+
+.events img {
+  width: 35%;
+  margin: 1rem;
 }
 
 /* Footer */
@@ -193,6 +321,7 @@ footer {
   height: 64px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  border-top: 1px solid rgb(245, 245, 245);
+  align-items: center;
+  border-top: 1px solid #000000;
+  background-color: #5485B3;
 }

@@ -5,6 +5,7 @@
     <title>Colmar Academy</title>
     <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
   </head>
   <body>
 
@@ -12,7 +13,7 @@
 
     <header>
       <div>
-        <img src="resources/images/ic-logo.svg">
+        <img class="logo" src="resources/images/ic-logo.svg">
         <span>COLMAR</span>
       </div>
       <nav class="desktop">
@@ -25,9 +26,9 @@
       </nav>
       <nav class="mobile">
         <ul>
-          <li><a href="#"><img src="resources/images/ic-on-campus.svg"></a></li>
-          <li><a href="#"><img src="resources/images/ic-online.svg"></a></li>
-          <li><a href="#"><img src="resources/images/ic-login.svg"></a></li>
+          <li><a href="#"><img class="nav" src="resources/images/ic-on-campus.svg"></a></li>
+          <li><a href="#"><img class="nav" src="resources/images/ic-online.svg"></a></li>
+          <li><a href="#"><img class="nav" src="resources/images/ic-login.svg"></a></li>
         </ul>
       </nav>
     </header>
@@ -43,17 +44,17 @@
       <div class="supporting-content banner-text">
         <h1>Learn something new every day</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <a href="#" class="button">Start here</a>
+        <button>Start here</button>
       </div>
     </div>
 
     <section class="flex-content">
     <div class="main-content heading">
       <img src="resources/images/information-main.jpg" alt="a man reading from a book">
-      <div class="content">
+      <div class="content" id="quotes">
         <h2>It doesn't hurt to keep practicing</h2>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accusmsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet efficitur dolor consequat, tristique ligula."</p>
-        <span>Emanuel, Sr Strategist at Hiring.com</span>
+        <p>Emanuel, Sr Strategist at Hiring.com</p>
       </div>
     </div>
 
@@ -162,26 +163,28 @@
 
     <!-- Thesis exhibit -->
 
-    <h2 id="thesis">Thesis exhibit</h2>
-    <section id="exhibit" class="flex-content">
-      <div class="main-content" id="video">
-        <video src="resources/videos/thesis.mp4" role="presentation" autoplay muted loop></video>
-        <h3>Reimagine Urban</h3>
-        <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accusmsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet efficitur dolor consequat, tristique ligula."</p>
-      </div>
-      <div class="supporting-content" id="events">
-        <div class="info" id="fisma">
-          <img src="resources/images/thesis-fisma.jpg" alt="">
-          <div class="content">
-            <h3>Fisma: Design and</h3>
-            <p>Designer showcase of new prototype product</p>
-          </div>
+    <section id="thesis">
+      <h2>Thesis exhibit</h2>
+      <div class="flex-content">
+        <div class="main-content" id="video">
+          <video src="resources/videos/thesis.mp4" role="presentation" autoplay muted loop></video>
+          <h3>Reimagine Urban</h3>
+          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accusmsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet efficitur dolor consequat, tristique ligula."</p>
         </div>
-        <div class="info">
-          <img src="resources/images/thesis-now-and-then.jpg" alt="">
-          <div class="content">
-            <h3>Now and then</h3>
-            <p>Research study about New York</p>
+        <div class="supporting-content" id="events">
+          <div class="events" id="fisma">
+            <img src="resources/images/thesis-fisma.jpg" alt="">
+            <div class="content">
+              <h3>Fisma: Design and</h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+          </div>
+          <div class="events">
+            <img src="resources/images/thesis-now-and-then.jpg" alt="">
+            <div class="content">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
           </div>
         </div>
       </div>
