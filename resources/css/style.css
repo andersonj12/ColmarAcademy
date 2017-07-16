@@ -60,27 +60,33 @@
   padding: 2rem 0;
 }
 
-.mobile {
-  display: none;
-}
-
 img {
   border-radius: 5px;
 }
 
 h1 {
   font-size: 48px;
-  font-weight: bold;
   margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
 
 body {
   line-height: 1.2;
   font-family: 'Kalam', cursive;
+  color: #000000;
 }
 
 p, span, a {
   font-size: 20px;
+}
+
+a {
+  text-decoration: underline;
+  color: #5485B3;
+  display: block;
 }
 
 h2 {
@@ -89,6 +95,140 @@ h2 {
 
 h3 {
   font-size: 28px;
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .info p, .info a {
+    font-size: 18px;
+  }
+
+  .items .item {
+    height: 340px;
+  }
+
+  .item p, .item span {
+    font-size: 18px;
+  }
+
+  .item h3 {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .nav {
+    padding: 10px;
+  }
+
+  div.desktop {
+    display: none;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .banner-text button {
+    font-size: 18px;
+  }
+
+  .banner .banner-text p {
+    font-size: 18px;
+    margin-top: 1rem;
+  }
+
+  .banner-text h1 {
+    margin: 0;
+  }
+
+  .main-content img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  div.heading {
+    display: block;
+  }
+
+  .info {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .sidebar {
+    padding: 0;
+  }
+
+  .info p, .info a {
+    font-size: 16px;
+  }
+
+  .info a {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  #quotes p {
+    font-size: 18px;
+  }
+
+  .sidebar .info img {
+    width: 80%;
+  }
+
+  div.items {
+    display: flex;
+  }
+
+  .item h3 {
+    font-size: 24px;
+  }
+
+  .item span, .item p {
+    font-size: 16px;
+  }
+
+  .items .item {
+    height: 300px;
+  }
+
+  .info .content {
+    width: 80%;
+  }
+
+  .items-mobile {
+    display: none;
+  }
+
+  #video {
+    width: 100%;
+    border-style: none;
+    padding-right: 0;
+  }
 }
 
 /* Header */
@@ -128,8 +268,9 @@ ul li {
   margin-right: 1rem;
 }
 
-nav.mobile {
-  display: none;
+.mobile ul, .mobile ul li {
+  display: flex;
+  align-items: center;
 }
 
 /* Banner */
@@ -218,7 +359,6 @@ section.flex-content {
 
 .info:last-child {
   background-color: #FFE9C4;
-  border-style: none;
 }
 
 /* Courses */
@@ -304,10 +444,6 @@ section.flex-content {
 
 .events:first-child {
   background-color: #FFE9C4;
-}
-
-.events:last-child {
-  border-style: none;
 }
 
 .events p {
