@@ -98,6 +98,7 @@ h3 {
 }
 
 @media only screen and (max-width: 1024px) {
+
   h1 {
     font-size: 40px;
   }
@@ -119,7 +120,7 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 481px) {
 
   .mobile {
     display: none;
@@ -128,12 +129,28 @@ h3 {
 
 @media only screen and (max-width: 768px) {
 
+   header #desktop-nav {
+    display: none;
+  }
+
+  header #tablet-nav {
+    display: flex;
+  }
+
   .desktop {
     display: none;
   }
 
   .nav {
     padding: 10px;
+  }
+
+  nav.mobile {
+    display: none;
+  }
+
+  nav.tablet {
+    display: block;
   }
 
   div.desktop {
@@ -170,6 +187,10 @@ h3 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  img.mobile {
+    display: inline-block;
   }
 
   .sidebar {
@@ -231,18 +252,77 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 480px) {
+
+  header #desktop-nav {
+    display: none;
+  }
+
+  header #tablet-nav {
+    display: none;
+  }
+
+  header #mobile-nav {
+    display: flex;
+  }
+}
+
 /* Header */
 
-header {
+#desktop-nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
   background-color: #5485B3;
   height: 64px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   z-index: 1;
   border-bottom: 1px solid #000000;
+}
+
+#tablet-nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5485B3;
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid #000000;
+}
+
+#mobile-nav {
+  display: none;
+  align-items: center;
+  background-color: #5485B3;
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid #000000;
+}
+
+#desktop-nav nav ul {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+#tablet-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mobile-nav nav {
+  width: 100%;
+}
+
+#mobile-nav nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 header div {
@@ -266,6 +346,7 @@ header div span::after {
 ul li {
   display: inline;
   margin-right: 1rem;
+  font-size: 18px;
 }
 
 .mobile ul, .mobile ul li {
@@ -464,4 +545,8 @@ footer {
   align-items: center;
   border-top: 1px solid #000000;
   background-color: #5485B3;
+}
+
+span.copyright {
+  font-size: 18px;
 }
